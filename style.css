@@ -54,14 +54,37 @@ body {
 
 /* Copertina Principale */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://unsplash.com') no-repeat center center/cover;
-    height: 100vh;
+    /* Sostituisci 'sfondo-saldatura.jpg' con il nome esatto e l'estensione della tua immagine */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('mt.jpg');
+    
+    /* Copre l'intera area della copertina mantenendo le proporzioni rettangolari */
+    background-size: cover;
+    
+    /* Centra l'immagine sia in verticale che in orizzontale */
+    background-position: center;
+    
+    /* Evita che l'immagine si ripeta */
+    background-repeat: no-repeat;
+    
+    /* Altezza della copertina: 60vh significa il 60% dell'altezza dello schermo (ottimo per un taglio rettangolare) */
+    min-height: 60vh; 
+    
+    /* Allinea i testi al centro */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
-    padding: 0 20px;
+    color: #ffffff; /* Colore del testo bianco per farlo risaltare */
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
 }
 
 .hero-content h1 {
